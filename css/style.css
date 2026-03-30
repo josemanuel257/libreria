@@ -46,7 +46,7 @@ select{
     font-weight: 600;
     font-size: 0.9rem;
     transition: background-color 0.2s;
-    width: 50%;
+            width: 50%;
 }
 
 .btn-apply:hover {
