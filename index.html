@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>libreria</title>
+    <link rel="stylesheet" href=".//css/style.css">
 </head>
 <body>
-    <header>-=
+    <header>
         <h1>libreria jojojojose</h1>
         <p>Bienvenido a nuestra libreria en este espacio podras agregar un libro nuevo</p>
     </header>
     <nav></nav>
     <main>
         <section>
+            <br>
             <h2>Agregar un libro</h2>
+            <br>
             <form action="#" method="post">
                 <label for="Titulo">Titulo</label>
                 <input type="text" id="Titulo" name="Titulo" placeholder="Escribe el titulo del libro" required>
-                <br><br>
+    
                 <label for="Autor">Autor</label>
                 <input type="text" id="Autor" name="Autor" placeholder="Escribe el autor del libro" required>
-                <br><br>
+                <br>
                 <label for="Año">Año</label>
                 <input type="number" id="Año" name="Año" min="1000" max="2026" placeholder="Escribe el año del libro" required>
-                <br><br>
-
+                <br>
                 <label for="Genero">Genero</label>
                 <select name="Genero" id="Genero" required>
                     <option value="Ficcion">Ficción</option>
@@ -36,12 +38,15 @@
                     <option value="comedia">Comedia</option>
                     <option value="novela">Novela</option>
                 </select>
-                <br><br>
-                <button type="submit">Agregar libro</button>
+                <button class="btn-apply" type="submit">Agregar libro</button>
+                
             </form>
         </section>
     </main>
-    <footer></footer>
+    <br><br>
+    <footer>
+        <p>Derechos reservados &copy; 2026</p>
+    </footer>
 
 </body>
 </html>
