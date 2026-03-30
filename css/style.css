@@ -36,6 +36,11 @@ select{
     box-sizing: border-box;
 }
 
+.error{
+    color:rgb(255, 128, 0);
+    font-size: 14px;
+}
+
 .btn-apply {
     background-color: #3e7cb1;
     color: #fff;
@@ -46,7 +51,7 @@ select{
     font-weight: 600;
     font-size: 0.9rem;
     transition: background-color 0.2s;
-            width: 50%;
+    width: 50%;
 }
 
 .btn-apply:hover {
