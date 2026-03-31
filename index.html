@@ -17,7 +17,7 @@
             <br>
             <h2>Agregar un libro</h2>
             <br>
-            <form action="#" method="post" id="formulario">
+            <form action="javascript:void(0);" method="post" id="formulario">
                 <label for="Titulo">Titulo</label>
                 <input type="text" id="Titulo" name="Titulo" placeholder="Escribe el titulo del libro">
                 <span id="errorTitulo" class="error"></span>
@@ -53,11 +53,55 @@
                 
             </form>
         </section>
+        <br>
+        <hr>
+        <br>
+
+        <div id="busquedaTitulo">
+                <h2>Buscar libros por título</h2>
+                <input type="text" id="busqueda" placeholder="Buscar por título">
+                <button id="btnBuscar">Buscar</button>
+            </div>
+
+            <div id="busquedaGenero">
+                <h2>Buscar libros por género</h2>
+                <select id="filtroGenero">
+                    <option value="">Selecciona un género</option>
+                    <option value="Ficcion">Ficción</option>
+                    <option value="Romance">Romance</option>
+                    <option value="CienciaFiccion">Ciencia Ficción</option>
+                    <option value="biografia">Biografía</option>
+                    <option value="terror">Terror</option>
+                    <option value="fantasia">Fantasía</option>
+                    <option value="comedia">Comedia</option>
+                    <option value="novela">Novela</option>
+                </select>
+                <button id="btnFiltrar">Filtrar</button>
+            </div>
+
+            <ul id="listaLibros"></ul>
+
+
+            <table id="tablaLibros">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Año</th>
+                        <th>Género</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpotabla">
+                </tbody>
+            </table>
+        </div>
     </main>
     <br><br>
     <footer>
         <p>Derechos reservados &copy; 2026</p>
     </footer>
     <script src="js/fuctions.js"></script>
+
+
 </body>
 </html>
