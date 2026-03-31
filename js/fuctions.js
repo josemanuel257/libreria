@@ -161,8 +161,33 @@ formulario.addEventListener(
             }
         });
 
-        const campoBusquedaTitulo = document.getElementById("campoBusquedaTitulo");
+        const inputBusqueda = document.getElementById("busqueda");
+        const selectFiltroGenero = document.getElementById("filtroGenero");
+        const btnBuscar = document.getElementById("btnBuscar");
+        const btnFiltrar = document.getElementById("btnFiltrar");
 
+        function aplicarFiltros() {
+            const textoBusqueda = inputBusqueda.value.trim();
+            const generoSeleccionado = selectFiltroGenero.value;
+            mostrarLibros(textoBusqueda, generoSeleccionado);
+        }
+
+        if (btnBuscar) {
+            btnBuscar.addEventListener("click", aplicarFiltros);
+        }
+
+        if (btnFiltrar) {
+            btnFiltrar.addEventListener("click", aplicarFiltros);
+        }
+
+        if (inputBusqueda) {
+            inputBusqueda.addEventListener("input", aplicarFiltros);
+        }   
+        if (selectFiltroGenero) {
+            selectFiltroGenero.addEventListener("change", aplicarFiltros);
+        }
+
+        
         document.addEventListener("DOMContentLoaded", () => {
             mostrarLibros();
 
